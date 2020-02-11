@@ -1,7 +1,7 @@
 package Lesson_00;
 import java.util.Scanner;
 
-public class Main {
+public class LessOO {
 
     public static void main(String[] args) {
 	//  номер задачи 1.22 a)
