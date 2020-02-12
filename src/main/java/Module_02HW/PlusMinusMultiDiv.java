@@ -16,16 +16,16 @@ public class PlusMinusMultiDiv {
 
         switch (znak) {
 
-            case '+':
+            case "+":
                 System.out.println("x + y равно " + (x + y));
                 break;
-            case '-':
+            case "-":
                 System.out.println("x - y равно " + (x - y));
                 break;
-            case '*':
+            case "*":
                 System.out.println("x * y равно " + (x * y));
                 break;
-            case '/':
+            case "/":
                 System.out.println("x / y равно " + (x / y));
                 break;
             default:
