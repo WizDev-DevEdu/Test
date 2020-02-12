@@ -63,7 +63,7 @@ public class DataType {
         long c1, c2, c3;
         char n1, n2, n3;
         //инициализация переменных результатом (сложения, вычетания...) других переменных
-        int x3, y3, z3, r3, t3, q3;      // объявление переменной типа int
+        int x3, y3, z3, r3, t3, q3;      // объявление переменной типа int ТАК НЕ ДЕЛАТЬ!!!
         x3 = 10;     // присвоения значения
         System.out.println(x3);
         y3 = 5 + x3; // присвоения значения сложением
@@ -83,8 +83,8 @@ public class DataType {
         System.out.println(b4);
         // преобразование от byte к int
         byte b5 = 7;
-//        int d5 = b;
-//        System.out.println(d5);
+        int d5 = b5;
+        System.out.println(d5);
         // от типа int к типу float с потерей данных
         int k2 = 2147483647;
         float kk2 = a;
