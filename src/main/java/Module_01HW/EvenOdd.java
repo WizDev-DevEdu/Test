@@ -1,4 +1,4 @@
-package Module_02HW;
+package Module_01HW;
 import java.util.Scanner;
 
 public class EvenOdd {

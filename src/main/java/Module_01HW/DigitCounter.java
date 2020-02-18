@@ -1,4 +1,4 @@
-package Module_02HW;
+package Module_01HW;
 
 public class DigitCounter
 {

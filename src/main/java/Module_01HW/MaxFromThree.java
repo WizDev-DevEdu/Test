@@ -1,10 +1,9 @@
-package Module_02HW;
-
+package Module_01HW;
 import java.util.Scanner;
 
-public class MinFromThree {
+public class MaxFromThree {
     public static void main(String args[]) {
-        System.out.println("Вычисляем минимальное из трех чисел");
+        System.out.println("Вычисляем максимум трех чисел");
         Scanner in = new Scanner(System.in);
         System.out.println("Введите первое число");
         double firstNumber = in.nextDouble();
@@ -14,12 +13,12 @@ public class MinFromThree {
         double thirdNumber = in.nextDouble();
         in.close();
 
-        if (firstNumber < secondNumber && firstNumber < thirdNumber){
-            System.out.println("Минимальное число " + firstNumber);
-        } else if (secondNumber < thirdNumber) {
-            System.out.println("Минимальное число " + secondNumber);
+        if (firstNumber > secondNumber && firstNumber > thirdNumber){
+            System.out.println("Максимальное число " + firstNumber);
+        } else if (secondNumber > thirdNumber) {
+            System.out.println("Максимальное число " + secondNumber);
         } else {
-            System.out.println("Минимальное число " + thirdNumber);
+            System.out.println("Максимальное число " + thirdNumber);
         }
 
 

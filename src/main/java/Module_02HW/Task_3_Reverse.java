@@ -1,6 +1,6 @@
-package Mod_02;
+package Module_02HW;
 
-public class Reverse {
+public class Task_3_Reverse {
     public static void main(String[] args) {
         int array[] = new int[]{1, 2, 3, 4, 5, 6};
         int middle = array.length;
