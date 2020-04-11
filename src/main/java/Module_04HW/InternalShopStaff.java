@@ -1,11 +1,11 @@
 package Module_04HW;
 
-public class InternaiShopStaff extends Staff {
+public class InternalShopStaff extends Staff {
     private String position;
     private int shopNumber;
     private String specialization;
 
-    public InternaiShopStaff(String firstName, String lastName, int age, int number, int workedDays, int rate, String position, int shopNumber, String specialization) {
+    public InternalShopStaff(String firstName, String lastName, int age, int number, int workedDays, int rate, String position, int shopNumber, String specialization) {
         super(firstName, lastName, age, number, workedDays, rate);
         this.position = position;
         this.shopNumber = shopNumber;
