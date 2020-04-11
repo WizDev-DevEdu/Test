@@ -8,14 +8,14 @@ public class Staff {
     private int workedDays;
     private int rate;
 
-    public Staff(String firstName, String lastName, int age, int number, int workedDays, int rate) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.number = number;
-        this.workedDays = workedDays;
-        this.rate = rate;
-    }
+//    public Staff(String firstName, String lastName, int age, int number, int workedDays, int rate) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.age = age;
+//        this.number = number;
+//        this.workedDays = workedDays;
+//        this.rate = rate;
+//    }
 
     public void setFirstName(String firstName) {
         if (firstName.isEmpty()) {
@@ -40,6 +40,11 @@ public class Staff {
     }
     public void getInfo() {
         System.out.println(firstName + " " + lastName + " " + age);
+    }
+
+    public int calcularionOfSalary(int workedDays, int rate) {
+        int salary = workedDays * rate;
+        return salary;
     }
 
 }
