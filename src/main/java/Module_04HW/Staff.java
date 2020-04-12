@@ -1,21 +1,15 @@
 package Module_04HW;
 
-public class Staff {
+public class Staff implements Info{
     private String firstName;
     private String lastName;
     private int age;
-    private int number;
-    private int workedDays;
-    private int rate;
+    int workedDays;
+    int rate;
 
-//    public Staff(String firstName, String lastName, int age, int number, int workedDays, int rate) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.age = age;
-//        this.number = number;
-//        this.workedDays = workedDays;
-//        this.rate = rate;
-//    }
+    public Staff() {
+
+    }
 
     public void setFirstName(String firstName) {
         if (firstName.isEmpty()) {
@@ -24,6 +18,7 @@ public class Staff {
             this.firstName = firstName;
         }
     }
+
     public void setLastName(String lastName) {
         if (lastName.isEmpty()) {
             System.out.println("Empty fielf((");
@@ -31,6 +26,7 @@ public class Staff {
             this.lastName = lastName;
         }
     }
+
     public void setAge(int age) {
         if (age < 0) {
             System.out.println("Wrong age((");
@@ -38,11 +34,26 @@ public class Staff {
             this.age = age;
         }
     }
+
     public void getInfo() {
         System.out.println(firstName + " " + lastName + " " + age);
     }
 
-    public int calcularionOfSalary(int workedDays, int rate) {
+    public void setWorkedDays(int workedDays) {
+        if (workedDays < 0) {
+            System.out.println("Wrong ((");
+        } else {
+            this.workedDays = workedDays;
+        }
+    }
+    public void setRate(int rate) {
+        if (rate < 0) {
+            System.out.println("Wrong ((");
+        } else {
+            this.rate = rate;
+        }
+    }
+    public int calculationOfSalary(int workedDays, int rate) {
         int salary = workedDays * rate;
         return salary;
     }

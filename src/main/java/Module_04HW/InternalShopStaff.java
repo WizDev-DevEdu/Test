@@ -12,9 +12,11 @@ public class InternalShopStaff extends Staff {
 //        this.specialization = specialization;
 //    }
 
-    public void getInternalInfo(String position, int shopNumber, String specialization) {
+    public void geInfo(String position, int shopNumber, String specialization) {
         System.out.println("Position is " + position);
         System.out.println("Shop number is "+ shopNumber);
         System.out.println("Specialization is " + specialization);
     }
+
+
 }

@@ -10,7 +10,7 @@ public class Shop extends Buildings {
         super(city, rent, area, type);
     }
 
-    public void getShopInfo(int shopNumber, int employeesNumber, String department) {
+    public void getInfo(int shopNumber, int employeesNumber, String department) {
         System.out.println("Information about shop:");
         System.out.println("Shop number is " + shopNumber);
         System.out.println("Staffs number is " + employeesNumber);
