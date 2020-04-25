@@ -9,7 +9,7 @@ public class Storage extends Buildings {
         super(city, rent, area, type);
     }
 
-    public void geInfo() {
+    public void getInfo() {
         System.out.println("Information about Storage:");
         System.out.println("Goods number is " + goodsNumber);
         System.out.println("Staffs number is " + employeesNumber);
