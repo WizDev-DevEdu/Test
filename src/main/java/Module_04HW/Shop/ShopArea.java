@@ -41,8 +41,11 @@ public class ShopArea {
         pc.goodsType(enterGoodsType2);
         String enterAnswer4 = in.nextLine();
         seller3.goToCashier(enterAnswer4);
-        cashier1.askCustomer();
-        String enterNumberOfGoods = in.nextLine();
+        cashier1.askCustomerAboutNumber();
+        int enterNumberOfGoods = Integer.parseInt(in.nextLine());
+        cashier1.askCustomerAboutGoods();
+        String cuftomerChoose = in.nextLine();
+        cashier1.priceOfGoods(enterNumberOfGoods,cuftomerChoose);
 
 //        System.out.println(phone.priceOfGoods(enter));
     }

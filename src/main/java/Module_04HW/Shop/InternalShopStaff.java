@@ -65,13 +65,40 @@ public class InternalShopStaff extends Staff {
                 System.out.println("Мы учтем Ваши пожелания");
         }
     }
-    public void askCustomer() {
-        System.out.println("Какоое количество товара Вам необходимо?");
+
+    public void askCustomerAboutNumber() {
+        System.out.println("Какое количество товара Вам необходимо?");
+    }
+
+    public void askCustomerAboutGoods() {
+        System.out.println("Какой товар Вы выбрали?");
+    }
+
+    public void priceOfGoods(int enterNumberOfGoods, String cuftomerChoose) {
+        switch (cuftomerChoose) {
+            case "phone1":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 8000);
+                break;
+            case "phone2":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 7000);
+                break;
+            case "TV1":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 18000);
+                break;
+            case "TV2":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 28000);
+                break;
+            case "PC1":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 38000);
+                break;
+            case "PC2":
+                System.out.println("Полная стоимость:" + enterNumberOfGoods * 58000);
+                break;
+            default:
+                System.out.println("Извените, я не могу Вам помочь.");
+        }
     }
 }
-    public void priceOfGoods (int enterNumberOfGoods){
-        System.out.println(enterNumberOfGoods*);
-    }
 //    public int customerQustion(){
 //        switch(position){
 //
