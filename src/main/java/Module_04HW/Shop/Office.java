@@ -11,4 +11,7 @@ public class Office {
         this.employeesNumber = employeesNumber;
         this.department = department;
     }
+    public void askAllInfo(){
+        System.out.println("Передайте мне всю инфу о складах, магазинах и персонале");
+    }
 }

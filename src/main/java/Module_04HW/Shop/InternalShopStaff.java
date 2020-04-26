@@ -26,10 +26,10 @@ public class InternalShopStaff extends Staff {
     public void chooseSeller(String enterDepartment) {
         switch (enterDepartment) {
             case "mobile":
-                System.out.println("Здравствуйте, я продавец отдела mobile. У нас есть phone1 и phone2. Какой РС вы хотите купить?");
+                System.out.println("Здравствуйте, я продавец отдела mobile. У нас есть phone1 и phone2. Какой mobile вы хотите купить?");
                 break;
             case "TV":
-                System.out.println("Здравствуйте, я продавец отдела TV. У нас есть TV1 и TV2. Какой РС вы хотите купить?");
+                System.out.println("Здравствуйте, я продавец отдела TV. У нас есть TV1 и TV2. Какой TV вы хотите купить?");
                 break;
             case "PC":
                 System.out.println("Здравствуйте, я продавец отдела РС. У нас есть PC1 и PC2. Какой РС вы хотите купить?");
@@ -73,39 +73,65 @@ public class InternalShopStaff extends Staff {
     public void askCustomerAboutGoods() {
         System.out.println("Какой товар Вы выбрали?");
     }
-
-    public void priceOfGoods(int enterNumberOfGoods, String cuftomerChoose) {
+public void conversation1(){
+    System.out.println("Полная стоимость:");
+}
+    public int priceOfGoods(int enterNumberOfGoods, String cuftomerChoose) {
+        int price = 0;
         switch (cuftomerChoose) {
             case "phone1":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 8000);
+                price =  enterNumberOfGoods * 8000;
                 break;
             case "phone2":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 7000);
+                price =  enterNumberOfGoods * 7000;
                 break;
             case "TV1":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 18000);
+                price =  enterNumberOfGoods * 18000;
                 break;
             case "TV2":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 28000);
+                price =  enterNumberOfGoods * 28000;
                 break;
             case "PC1":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 38000);
+                price =  enterNumberOfGoods * 38000;
                 break;
             case "PC2":
-                System.out.println("Полная стоимость:" + enterNumberOfGoods * 58000);
+                price =  enterNumberOfGoods * 58000;
                 break;
             default:
-                System.out.println("Извените, я не могу Вам помочь.");
+                price = 1;
+        }return price;
+    }
+    public void conversation2(){
+        System.out.println("После оплаты предъявите чек охране");
+    }
+
+    public void checkTheCeckRequest() {
+        System.out.println("У Вас есть чек? Предъявите.");
+    }
+
+    public void checkTheCeck(String securityConversation) {
+        switch (securityConversation.toLowerCase()) {
+            case "yes":
+                System.out.println("Все Ок! Спасибо за покупку.");
+                break;
+            case "no":
+                System.out.println("Звоните в полицию!!!");
+                break;
+            default:
+                System.out.println("ЭЭЭЭ, блым-блым");
         }
     }
+    public void askAnoutCassaAmount(){
+        System.out.println("Кассир какой выторг сегодня? Сдай кассу.");
+    }
+//    public int totalCassa(){
+//        int cassaAmount = 0;
+//        cassaAmount = price;
+//        System.out.println();
+//    }return cassaAmount;
+
+
 }
-//    public int customerQustion(){
-//        switch(position){
-//
-//            case seller:
-//                System.out.println();
-//
-//        }
-//    }
+
 
 
