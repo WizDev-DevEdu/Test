@@ -1,4 +1,4 @@
-package Module_04HW;
+package Module_04HW.Shop;
 
 public class ExternalShopStaff extends Staff {
     public static String priceOfGoods;

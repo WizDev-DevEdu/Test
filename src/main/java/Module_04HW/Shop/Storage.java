@@ -1,4 +1,4 @@
-package Module_04HW;
+package Module_04HW.Shop;
 
 public class Storage extends Buildings {
     private int goodsNumber;
