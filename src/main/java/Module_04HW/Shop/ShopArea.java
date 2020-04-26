@@ -33,10 +33,10 @@ public class ShopArea {
 
 //        Попытка продажи товара, передача покупателя кассиру.
         String enterAnswer = in.nextLine();
-        seller3.goToCashier(enterAnswer);
-        if (enterAnswer.equals("yes")){
-            String enterAnswer2 = in.nextLine();
-        }else{
+        switch (enterAnswer.toLowerCase()){
+            case "yes":  System.out.println("Пройдемте на кассу");
+            break;
+            case "no": System.out.println("Я могу Вам чем-то еще помочь?");
             String enterAnswer2 = in.nextLine();
             seller3.differentChoise(enterAnswer2);
             String enterAnswer3 = in.nextLine();
@@ -45,6 +45,9 @@ public class ShopArea {
             pc.goodsType(enterGoodsType2);
             String enterAnswer4 = in.nextLine();
             seller3.goToCashier(enterAnswer4);
+            break;
+            default:
+                System.out.println("Вы ввели что-то не то");
         }
 
 //        Взаимодействие кассира и покупателя
@@ -60,6 +63,9 @@ public class ShopArea {
         security.checkTheCeckRequest();
         String securityConversation = in.nextLine();
         security.checkTheCeck(securityConversation);
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
 
 //         Взаимодействие менеджера с персоналом офиса. Cоздала метод getInfo() для работы через интерфейс
         director.askAllInfo();
