@@ -1,6 +1,6 @@
 package Lesson_00;
 import java.util.Scanner;
-
+//
 public class LessOO {
 
     public static void main(String[] args) {
